@@ -82,8 +82,8 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background-image: linear-gradient(25deg, #17ffd3 0%, #d3fc71 95%);
-  color: #091337;
+  background-image: linear-gradient(25deg, #8E4CB1 0%, #BF9AC6 100%);
+  color: white;
   transition: background 1s ease-out;
 }
 
@@ -92,8 +92,8 @@ h6, .h6 {
 }
 
 .btn-primary:hover {
-  background: linear-gradient(205deg, #17ffd3 0%, #d3fc71 95%);
-  color: #091337;
+  background: linear-gradient(205deg, #8E4CB1 0%, #BF9AC6 100%);
+  color: white;
 }
 
 .btn-secondary {
@@ -1523,7 +1523,7 @@ textarea.form-control {
 
 .team-item:hover::before,
 .team-item:hover::after {
-  background: rgb(241, 255, 85);
+  background: #b182cbec ;
 }
 
 .team-item h5,
@@ -1533,12 +1533,12 @@ textarea.form-control {
 
 .team-item:hover h5,
 .team-item:hover p {
-  color: #000;
+  color: #ffffff;
 }
 
 .team-item img {
   padding: 15px;
-  border: 1px solid rgb(229, 247, 23);
+  border: 1px solid rgb(135, 50, 156);
 }
 
 /* Adjustments for circular social media buttons */
