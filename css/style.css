@@ -82,7 +82,7 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background-image: linear-gradient(25deg, #8E4CB1 0%, #BF9AC6 100%);
+  background-image: linear-gradient(25deg, #6a2f89 0%, #882d9b 100%);
   color: white;
   transition: background 1s ease-out;
 }
@@ -98,7 +98,7 @@ h6, .h6 {
 
 .btn-secondary {
   position: relative; /* This allows the absolute positioning of the pseudo-element relative to the button */
-  background-image: linear-gradient(6deg, #8E4CB1 0%, #BF9AC6 100%);
+  background-image: linear-gradient(6deg, #632a82 0%, #973da9 100%);
   color: #091337;
   overflow: hidden; /* This hides the overflow of the pseudo-element ensuring it doesn't spill outside the button */
 }
@@ -110,7 +110,7 @@ h6, .h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(186deg, #8E4CB1 0%, #BF9AC6 100%);
+  background: linear-gradient(186deg, #632a82 0%, #973da9 100%);
   opacity: 0; /* Initially fully transparent */
   z-index: -1; /* This places it behind the button's content */
   transition: opacity .2s ease-in-out;
@@ -470,6 +470,14 @@ a:hover {
 .navigation {
   transition: .3s ease;
 }
+.navigation .navbar .navbar-brand span{
+  color: white;
+
+  }
+.navigation .navbar .navbar-nav .nav-link{
+  color: white;
+
+  }
 
 .navbar {
   transition: .3s ease;
@@ -486,9 +494,18 @@ a:hover {
   box-shadow: 0px 10px 20px 0px rgba(0, 46, 77, 0.1);
 }
 
+.nav-bg .navbar .navbar-brand span{
+  color: black;
+
+  }
+
 .nav-bg .navbar {
   padding: 10px 0;
 }
+.nav-bg .navbar .navbar-nav .nav-link{
+  color: black;
+
+  }
 
 .hero-section {
   padding-top: 120px;
@@ -1523,7 +1540,7 @@ textarea.form-control {
 
 .team-item:hover::before,
 .team-item:hover::after {
-  background: #b182cbec ;
+  background: #9b57c0ec ;
 }
 
 .team-item h5,
@@ -1648,5 +1665,30 @@ textarea.form-control {
   background-color: #8E4CB1;
   border: 1px solid transparent;
 }
+
+@keyframes gradientAnimation {
+  0%, 100% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+}
+
+.head {
+  background: linear-gradient(45deg, #965eb4, #BF9AC6, #e2bbbb, #965eb4);
+  background-size: 200% 200%;
+  animation: gradientAnimation 30s infinite; /* Increased to 30s for a smoother transition */
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .head {
+      height: unset;
+      padding-bottom: 20px;
+  }
+}
+
+
 
 
